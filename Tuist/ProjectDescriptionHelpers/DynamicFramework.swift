@@ -1,6 +1,6 @@
 import ProjectDescription
 
-extension Project{
+extension Project {
     public static func dynamicFramework(
         name: String,
         platform: Platform = .iOS,
@@ -14,16 +14,17 @@ extension Project{
         return Project(
             name: name,
             packages: packages,
-            settings: nil,
+            settings: .settings(base: .codeSign),
             targets: [
                 Target(
                     name: name,
                     platform: platform,
                     product: .framework,
-                    bundleId: "\(publicOrganizationName).\(name)",
+                    bundleId: "\(dmsOrganizationName).\(name)",
                     deploymentTarget: deploymentTarget,
                     infoPlist: infoPlist,
                     sources: ["Sources/**"],
+                    scripts: [.swiftlint],
                     dependencies: dependencies
                 )
             ]

@@ -10,18 +10,20 @@ extension Project{
     ) -> Project {
         return Project(
             name: name,
-            organizationName: publicOrganizationName,
-            settings: nil,
+            organizationName: dmsOrganizationName,
+            settings: .settings(base: .codeSign),
             targets: [
+                
                 Target(
                     name: name,
                     platform: platform,
                     product: product,
-                    bundleId: "\(publicOrganizationName).\(name)",
+                    bundleId: "\(dmsOrganizationName).\(name)",
                     deploymentTarget: deploymentTarget,
                     infoPlist: .file(path: Path("Support/Info.plist")),
                     sources: ["Sources/**"],
                     resources: ["Resources/**"],
+                    scripts: [.swiftlint],
                     dependencies: [
                         .project(target: "ThirdPartyLib", path: "../ThirdPartyLib")
                     ] + dependencies
