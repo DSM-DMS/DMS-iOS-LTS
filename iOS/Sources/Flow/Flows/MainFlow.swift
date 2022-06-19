@@ -9,31 +9,30 @@
 import UIKit
 import RxFlow
 
-final class MainFlow: Flow{
-    var root: Presentable{
+final class MainFlow: Flow {
+    var root: Presentable {
         return self.rootVC
     }
-    
-    enum TabIndex: Int{
+    enum TabIndex: Int {
         case home = 0
         case middle = 1
         case end = 2
     }
-    
+
     let rootVC: UITabBarController = .init()
     // Flows
-    
-    init(){
+
+    init() {
         // Flows init
     }
-    
+
     deinit {
         print("\(type(of: self)): \(#function)")
     }
-    
+
     func navigate(to step: Step) -> FlowContributors {
-        
-        switch step{
+
+        switch step {
         default:
             return .none
         }
@@ -41,6 +40,6 @@ final class MainFlow: Flow{
 }
 
 // MARK: - Method
-private extension MainFlow{
-    
+private extension MainFlow {
+
 }

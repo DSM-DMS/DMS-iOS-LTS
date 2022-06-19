@@ -13,24 +13,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let s = (scene as? UIWindowScene) else { return }
-        
+        guard let scene = (scene as? UIWindowScene) else { return }
+
         coordinateLogger()
-        coordinateToAppFlow(with: s)
+        coordinateToAppFlow(with: scene)
     }
-    
-    private func coordinateToAppFlow(with scene: UIWindowScene){
+    private func coordinateToAppFlow(with scene: UIWindowScene) {
         let window = UIWindow(windowScene: scene)
         self.window = window
-        
         let appFlow = AppFlow(with: window)
         let appStepper = AppStepper()
-        
         coordinator.coordinate(flow: appFlow, with: appStepper)
         window.makeKeyAndVisible()
     }
-    
-    private func coordinateLogger(){
+    private func coordinateLogger() {
         coordinator.rx.willNavigate
             .subscribe(onNext: { flow, step in
                 let currentFlow = "\(flow)".split(separator: " ").last ?? "No Flow"
@@ -40,25 +36,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
-        
+
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        
+
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        
+
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        
+
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        
+
     }
 
-
 }
-

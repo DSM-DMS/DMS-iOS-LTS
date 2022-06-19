@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0160E0FA0C925B882197409F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA6CA2913C67D9BEBC02A76 /* Color.xcassets */; };
 		158D1256C414C395CE5DB037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2B0954C7B1EEE8B5ADD1AD /* Assets.xcassets */; };
 		15D53E97515D8466F14FF3A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C513B2E99CEA6439F9590F /* AppDelegate.swift */; };
 		1A30408F12C6B179DAA78696 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E724E5CE18D0F33BA37BC727 /* AppFlow.swift */; };
 		362940A2BEFDF2B1FFE37632 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E1562327DB5DFF93A87C1D /* MainFlow.swift */; };
+		3B06984DBC0228595238DA1C /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BA0287B1E46F23A1F6842 /* BaseVC.swift */; };
 		51CB0E2C2A0957233C8A18D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31356F0CB5E5AD781A54D6 /* SceneDelegate.swift */; };
 		5951454608D3F77E41379E51 /* ThirdPartyLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C121C1CA6A479DD72BB8308B /* ThirdPartyLib.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D1A47CB433CBAAB893A95CA /* ThirdPartyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C121C1CA6A479DD72BB8308B /* ThirdPartyLib.framework */; platformFilter = ios; };
-		9B3E50503244BB6B0F929F82 /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD475EA0B50318EDB2198258 /* baseVC.swift */; };
 		A2F4E61EC2AEB2D18C55CFEE /* TuistBundle+DMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436DDD5A3C5E6FEAB0256EC /* TuistBundle+DMS.swift */; };
 		C73810D6AA05479518F01885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9867D494D6F8C96F90BAD365 /* LaunchScreen.storyboard */; };
 		E164E379FF2C70CBADCFAB42 /* TuistAssets+DMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12087B5FFD84AC4769FFB068 /* TuistAssets+DMS.swift */; };
@@ -37,16 +38,17 @@
 /* Begin PBXFileReference section */
 		01E1562327DB5DFF93A87C1D /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		12087B5FFD84AC4769FFB068 /* TuistAssets+DMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+DMS.swift"; sourceTree = "<group>"; };
+		3D8BA0287B1E46F23A1F6842 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		4E31356F0CB5E5AD781A54D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CF67AD6737DE6853B24A180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9867D494D6F8C96F90BAD365 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6C44FCB2FF84889BBB223B /* DMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD475EA0B50318EDB2198258 /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		C121C1CA6A479DD72BB8308B /* ThirdPartyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C513B2E99CEA6439F9590F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E724E5CE18D0F33BA37BC727 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		EE2B0954C7B1EEE8B5ADD1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F436DDD5A3C5E6FEAB0256EC /* TuistBundle+DMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+DMS.swift"; sourceTree = "<group>"; };
+		FCA6CA2913C67D9BEBC02A76 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2B0954C7B1EEE8B5ADD1AD /* Assets.xcassets */,
+				FCA6CA2913C67D9BEBC02A76 /* Color.xcassets */,
 				9867D494D6F8C96F90BAD365 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -133,7 +136,7 @@
 		A74250706DCAAA58C45910F0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				BD475EA0B50318EDB2198258 /* baseVC.swift */,
+				3D8BA0287B1E46F23A1F6842 /* BaseVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -204,6 +207,8 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = com.DMS;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = F4A0D1EB7AC3C1682C11D112 /* Build configuration list for PBXProject "DMS" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				158D1256C414C395CE5DB037 /* Assets.xcassets in Resources */,
+				0160E0FA0C925B882197409F /* Color.xcassets in Resources */,
 				C73810D6AA05479518F01885 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "../Scripts/SwiftLintRunScript.sh\n";
+			shellScript = ../Scripts/SwiftLintRunScript.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -265,7 +271,7 @@
 				A2F4E61EC2AEB2D18C55CFEE /* TuistBundle+DMS.swift in Sources */,
 				15D53E97515D8466F14FF3A7 /* AppDelegate.swift in Sources */,
 				51CB0E2C2A0957233C8A18D9 /* SceneDelegate.swift in Sources */,
-				9B3E50503244BB6B0F929F82 /* baseVC.swift in Sources */,
+				3B06984DBC0228595238DA1C /* BaseVC.swift in Sources */,
 				1A30408F12C6B179DAA78696 /* AppFlow.swift in Sources */,
 				362940A2BEFDF2B1FFE37632 /* MainFlow.swift in Sources */,
 			);
